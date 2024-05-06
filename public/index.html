@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.11.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.11.1/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-messaging-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-storage-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.11.1/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+       initialize the SDK after all desired features are loaded, set useEmulator to false
+       to avoid connecting the SDK to running emulators.
+     -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="/src/firebaseConfig.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <button onCLick="googleLogin()">Sign in Using Google</button>
+<!-- <form>
+ <textarea  name="message" id="content" req cols="30" rows="10"></textarea>
+<button id="addMessageButton">Add message</button>
+</form> -->
+    <!-- updating the h2 tab -->
+    <!-- <h2 id="title"></h2>
+    <input type="text" onchange="updatePost(event)" /> -->
+
+    <!-- uploading file in the storge eg images or videos -->
+    <!-- <h3>Storage Uploads</h3>
+    <input type="file" onchange="uploadFile(this.files)" />
+    <hr />
+    <img id="storageImage" src="" width="'100vw'" height="auto" /> -->
+
+
+    <h2>Add Message Example</h2>
+    <form id="messageForm">
+      <textarea id="messageText" placeholder="Enter your message..."></textarea>
+      <input type="text" id="userId" placeholder="Enter user ID...">
+      <button id="sendMessageBtn">Send Message</button>
+    </form>
+    
+
+  </body>
+</html>
